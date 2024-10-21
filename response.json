@@ -1,0 +1,66 @@
+{
+    "body": {},
+    "headers": {
+        "server": "nginx/1.18.0 (Ubuntu)",
+        "date": "Sat, 19 Oct 2024 23:18:28 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "expires": "0",
+        "cache-control": "no-store",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "x-frame-options": "DENY",
+        "vary": "accept-encoding",
+        "content-encoding": "gzip",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
+    },
+    "status": 200,
+    "statusText": "OK",
+    "isOkStatusCode": true,
+    "requestHeaders": {
+        "Connection": "keep-alive",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cuYWR2YW50YWdlb25saW5lc2hvcHBpbmcuY29tIiwidXNlcklkIjoxOTE4MTExNzMsInN1YiI6IlBhdWxvIiwicm9sZSI6IlVTRVIifQ.WHR7n0-SkwAMU9spUYHw7cxQ-EFjkNI29gZXCZgadng",
+        "ContentType": "multipart/form-data",
+        "content-type": "multipart/form-data; boundary=----CypressFormDataBoundary",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/13.15.0 Chrome/118.0.5993.159 Electron/27.3.10 Safari/537.36",
+        "accept": "/",
+        "accept-encoding": "gzip, deflate",
+        "content-length": 4945
+    },
+    "requestBody": {},
+    "duration": 485,
+    "allRequestResponses": [
+        {
+            "Request Body": {},
+            "Request Headers": {
+                "Connection": "keep-alive",
+                "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cuYWR2YW50YWdlb25saW5lc2hvcHBpbmcuY29tIiwidXNlcklkIjoxOTE4MTExNzMsInN1YiI6IlBhdWxvIiwicm9sZSI6IlVTRVIifQ.WHR7n0-SkwAMU9spUYHw7cxQ-EFjkNI29gZXCZgadng",
+                "ContentType": "multipart/form-data",
+                "content-type": "multipart/form-data; boundary=----CypressFormDataBoundary",
+                "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/13.15.0 Chrome/118.0.5993.159 Electron/27.3.10 Safari/537.36",
+                "accept": "/",
+                "accept-encoding": "gzip, deflate",
+                "content-length": 4945
+            },
+            "Request URL": "https://www.advantageonlineshopping.com/catalog/api/v1/product/image/191811173/teste_automatizado/%230000FF?product_id=13",
+            "Response Body": {},
+            "Response Headers": {
+                "server": "nginx/1.18.0 (Ubuntu)",
+                "date": "Sat, 19 Oct 2024 23:18:28 GMT",
+                "content-type": "application/json",
+                "transfer-encoding": "chunked",
+                "connection": "keep-alive",
+                "expires": "0",
+                "cache-control": "no-store",
+                "x-content-type-options": "nosniff",
+                "x-xss-protection": "1; mode=block",
+                "x-frame-options": "DENY",
+                "vary": "accept-encoding",
+                "content-encoding": "gzip",
+                "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
+            },
+            "Response Status": 200
+        }
+    ]
+}
