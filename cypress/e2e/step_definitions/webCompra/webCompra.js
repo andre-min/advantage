@@ -2,7 +2,7 @@ import {Given, When, And, Then} from "cypress-cucumber-preprocessor/steps"
 
 var nomeProdutoBusca;
 
-//cenario 1
+
 Given(/^que o usuario esteja na pagina home "([^"]*)"$/, (args1) => {
 	cy.visit(`https://advantageonlineshopping.com/${args1}`)
     cy.intercept('GET', '/app/views/home-page.html*').as('getElements')
@@ -25,7 +25,7 @@ Then(/^devera ser direcionado para a pagina resultado da pesquisa$/, () => {
 	cy.get('.select').should('contains.text', nomeProdutoBusca)
 });
 
-//cenario2
+
 Given(/^que o usuario esteja na pagina resultado da pesquisa "([^"]*)"$/, (args1) => {
 	cy.visit(`https://advantageonlineshopping.com/${args1}`)
     cy.intercept('GET', '/app/views/search-page.html*').as('getElement')
@@ -51,7 +51,7 @@ Then(/^devera ser direcionado para a pagina especificacao do produto$/, () => {
 	cy.get('section.ng-scope > :nth-child(3) > .roboto-regular').should('have.text', 'PRODUCT SPECIFICATIONS')
 });
 
-//cenario 3
+
 Given(/^que o usuario esteja na pagina de especificacao do produto id "([^"]*)"$/, (args1) => {
 	cy.visit(`https://advantageonlineshopping.com/#/product/${args1}`)
     cy.intercept('GET', '/app/views/product-page.html*').as('getProduto')
@@ -69,15 +69,6 @@ When(/^clica em adicionar o produto no carrinho$/, () => {
 	cy.get('.fixedBtn > .roboto-medium').click()
 });
 
-// And(/^verifco valor mais quantidade do produto se esta correto$/, () => {
-//     cy.get(':nth-child(1) > :nth-child(3) > .price')
-//         .invoke('text').then(($valor) => {
-//             cy.log('Novo valor',$valor)
-//         })  
-//     cy.get()
-// });
-
-
 
 Then(/^devera apresentar um pop-up com nome produto "([^"]*)"$/, (args1) => {
 	cy.get('li > #toolTipCart > :nth-child(1) > table > tbody > #product > :nth-child(2) > a > h3.ng-binding')
@@ -91,10 +82,6 @@ Then(/^devera apresenta pou-up com  produtos adicionado$/, () => {
     })
 });
 
-
-
-
-//cenario 4
 
 And(/^clica no botao CHECKOUT$/, () => {
 	cy.get('#checkOutPopUp').click()
@@ -162,49 +149,6 @@ Then(/^verificar informacao RESUMO DO PEDIDO valor total cor quantidade igual "(
     })
 	
 });
-
-
-
-
-
-
-
-// Then(/^verificar se o carrinho está com a quantidade diferente$/, () => {
-//     const extrairQtd = parseInt(qtd.replace('QTY: ', '').trim(), 10);
-// 	expect(extrairQtd).to.be.greaterThan(0)
-// });
-
-
-// Then(/^verifica se o carrinho nao está vazio$/, () => {
-// 	const qtdInt = parseInt(qtd.replace('QTY: ', '').trim(), 10);
-// 	expect(qtdInt).to.be.greaterThan(0)
-//     expect(qtdInt).to.not.equal(0);
-// });
-
-// When(/^navegar para a pagina carrinho de compra$/, () => {
-// 	cy.get('#shoppingCartLink').click()
-//     cy.get('.sticky').should('contains.text', 'SHOPPING CART')
-// });
-
-// Then(/^o produto "([^"]*)" deverá estar listado na página carrinho de compras$/, (args1) => {
-// 	cy.get('tr.ng-scope > :nth-child(2) > .roboto-regular')
-//         .should('include.text', args1)
-//     cy.get(':nth-child(6) > .price').invoke('text').then(($valor) => {
-//         const novValor = parseFloat(vlr.replace(/[$,]/g, '').trim())
-//         const valorFormatado = novValor.toFixed(2)
-//         const novPrice = parseFloat($valor.replace(/[$,]/g, '').trim())
-//         const priceFormatado = novPrice.toFixed(2)
-//         expect(valorFormatado).to.be.equal(priceFormatado)
-//     })
-    
-//     const extrairQtd = parseInt(qtd.replace('QTY: ', '').trim(), 10);
-//     cy.get(':nth-child(5) > .ng-binding').invoke('text').then(($quantidade) => {
-//         const qtdeInt = parseInt($quantidade, 10)
-//         expect(extrairQtd).to.be.equal(qtdeInt)
-//     })
-// });
-
-
 
 
 When(/^preencho o campo busca pelo produto "([^"]*)" inexistente$/, (args1) => {
